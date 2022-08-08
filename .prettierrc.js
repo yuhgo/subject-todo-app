@@ -1,0 +1,7 @@
+module.exports = {
+  singleQuote: false,
+  jsxSingleQuote: false,
+  semi: false,
+  trailingComma: "all",
+  arrowParens: "always",
+}
