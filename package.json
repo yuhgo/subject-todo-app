@@ -13,7 +13,8 @@
     "fix:eslint": "eslint --ext .jsx,.js,.tsx,.tsx . --fix",
     "fix:prettier": "prettier --write .",
     "prepare": "husky install",
-    "unit": "jest --watch"
+    "unit": "jest --watch",
+    "unit:build": "jest"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
