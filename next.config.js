@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  rewrites: async () => {
+  async rewrites() {
     return [{ source: "/", destination: "/root" }]
   },
   reactStrictMode: true,
