@@ -1,1 +1,0 @@
-export { IndexBase } from "./IndexBase"

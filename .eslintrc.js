@@ -45,7 +45,6 @@ module.exports = {
     "func-style": ["error", "expression"],
     "arrow-body-style": ["error", "always"],
 
-    "no-undef": ["error"],
     "no-var": "error",
 
     // sort

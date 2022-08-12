@@ -1,13 +1,12 @@
 import "../lib/tailwind.css"
 
 import { MantineProvider } from "@mantine/core"
-import type { AppPropsWithLayout } from "next/app"
+import { store } from "@src/redux/apps"
+import { CustomAppPage } from "next/app"
 import React, { memo } from "react"
 import { Provider } from "react-redux"
 
-import { store } from "@/redux/apps/store"
-
-export const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+export const App: CustomAppPage = ({ Component, pageProps }) => {
   const getLayout =
     Component.getLayout ||
     ((page) => {
