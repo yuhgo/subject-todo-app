@@ -16,10 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"],
-      "@/components/*": ["src/components/*"],
-      "@/pages/*": ["src/pages/*"],
-      "@/redux/*": ["src/redux/*"]
+      "@src/*": ["src/*"]
     }
   },
   "exclude": ["node_modules", ".next", "out"],

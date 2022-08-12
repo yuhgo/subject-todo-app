@@ -4,6 +4,7 @@ type HeaderProps = {
   title: string
 }
 
+/** @package */
 export const Header: FC<HeaderProps> = (props) => {
   const { title } = props
 

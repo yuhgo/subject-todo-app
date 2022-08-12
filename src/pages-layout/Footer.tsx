@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 
+/** @package */
 export const Footer: FC = () => {
   return (
     <div>
