@@ -1,4 +1,5 @@
-import { Footer, Header, LayoutErrorBoundary } from "@src/pages-layout"
+import { Footer, LayoutErrorBoundary } from "@src/pages-layout"
+import { Header } from "@src/pages-layout/header"
 import type { CustomLayout } from "next"
 import React from "react"
 
@@ -7,10 +8,12 @@ export const AppLayout: CustomLayout = (page) => {
   const { children } = page
 
   return (
-    <>
-      <Header title="ヘッダーだよ" />
-      <LayoutErrorBoundary>{children}</LayoutErrorBoundary>
+    <div className="">
+      <Header />
+      <main className="mx-auto w-full max-w-screen-sm px-4">
+        <LayoutErrorBoundary>{children}</LayoutErrorBoundary>
+      </main>
       <Footer />
-    </>
+    </div>
   )
 }
