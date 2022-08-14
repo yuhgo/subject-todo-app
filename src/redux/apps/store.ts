@@ -1,9 +1,9 @@
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit"
+import { headerReducer } from "@src/redux/feature/header"
 
-// Reducer
-// import demoReducer from ''
-
-const reducer = {}
+const reducer = {
+  header: headerReducer,
+}
 
 /** @package **/
 export const store = configureStore({
