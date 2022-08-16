@@ -5,6 +5,9 @@ const nextConfig = {
   },
   reactStrictMode: false,
   swcMinify: true,
+  images: {
+    domains: ["firebasestorage.googleapis.com"],
+  },
   pageExtensions: ["page.tsx", "page.ts"],
 }
 

@@ -68,7 +68,7 @@ export const Avatar: FC = () => {
       >
         <Image
           alt="avatar"
-          src="/avatar.png"
+          src="https://firebasestorage.googleapis.com/v0/b/ec-template-45bdd.appspot.com/o/avatar%2Favatar.png?alt=media&token=bb87c697-58bf-483f-8702-a7534a1e7462"
           height={45}
           width={45}
           className="rounded-full"
