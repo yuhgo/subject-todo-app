@@ -1,19 +1,22 @@
-import { Footer, LayoutErrorBoundary } from "@src/pages-layout"
+import { LayoutErrorBoundary } from "@src/pages-layout"
 import { Header } from "@src/pages-layout/header"
-import type { CustomLayout } from "next"
-import React from "react"
+import React, { FC } from "react"
+
+type AppLayoutProps = {
+  children: React.ReactNode
+}
 
 /** @package */
-export const AppLayout: CustomLayout = (page) => {
+export const AppLayout: FC<AppLayoutProps> = (page) => {
   const { children } = page
 
   return (
-    <div className="">
+    <div className="box-border">
       <Header />
-      <main className="mx-auto w-full max-w-screen-sm px-4">
+      <main className="w-full max-w-screen-sm px-2 pt-[60px]">
         <LayoutErrorBoundary>{children}</LayoutErrorBoundary>
       </main>
-      <Footer />
+      {/*<Footer />*/}
     </div>
   )
 }

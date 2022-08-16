@@ -1,8 +1,16 @@
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit"
 import { headerReducer } from "@src/redux/feature/header"
+import {
+  addTaskFormReducer,
+  sectionReducer,
+  taskReducer,
+} from "@src/redux/feature/todo"
 
 const reducer = {
   header: headerReducer,
+  task: taskReducer,
+  section: sectionReducer,
+  addTaskForm: addTaskFormReducer,
 }
 
 /** @package **/

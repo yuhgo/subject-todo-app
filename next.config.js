@@ -3,7 +3,7 @@ const nextConfig = {
   async rewrites() {
     return [{ source: "/", destination: "/root" }]
   },
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
   pageExtensions: ["page.tsx", "page.ts"],
 }

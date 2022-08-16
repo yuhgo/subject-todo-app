@@ -53,7 +53,10 @@ export const Avatar: FC = () => {
       ]}
     >
       <button
-        className="flex items-center rounded-full border-none p-0"
+        className="
+        flex items-center rounded-full border-none p-0
+        shadow-[3px_3px_8px_1px_rgba(113,113,112,0.3)]
+        "
         onClick={() => {
           dispatch(
             changeStateForHeader({

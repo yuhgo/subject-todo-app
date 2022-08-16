@@ -9,7 +9,7 @@ const initialState: HeaderState = {
 
 /** @package */
 export const headerSlice = createSlice({
-  name: "snackbar",
+  name: "header",
   initialState,
   reducers: {
     changeState: (state: HeaderState, action: PayloadAction<HeaderState>) => {

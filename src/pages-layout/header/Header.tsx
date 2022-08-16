@@ -8,9 +8,12 @@ export const Header: FC = () => {
   return (
     <header
       className="
-      flex h-[60px]
+      fixed box-border
+      flex
+      h-[60px]
+      w-full
       items-center
-      justify-between
+      justify-between bg-blue-500/[.35]
       px-2
       shadow-lg
       "
@@ -19,7 +22,7 @@ export const Header: FC = () => {
         <h1 className="text-3xl">TODOアプリ</h1>
       </Link>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-4">
         <Add />
         <Avatar />
       </div>
