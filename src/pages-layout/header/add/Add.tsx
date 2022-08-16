@@ -1,6 +1,7 @@
 import { PlusIcon } from "@heroicons/react/outline"
 import { Modal } from "@mantine/core"
 import { Button } from "@src/lib/mantine"
+import { AddTaskForm } from "@src/pages-layout/header/add"
 import { useAppDispatch, useAppSelector } from "@src/redux/apps"
 import {
   changeState as changeStateForHeader,
@@ -16,7 +17,13 @@ export const Add: FC = () => {
   return (
     <>
       <Button
-        className="m-0 h-10 w-10 bg-transparent p-0"
+        className="
+        m-0
+        h-10 w-10
+        bg-transparent
+        p-0
+        shadow-[3px_3px_8px_1px_rgba(113,113,112,0.3)]
+        "
         color="gray"
         variant="outline"
         onClick={() => {
@@ -46,7 +53,7 @@ export const Add: FC = () => {
           close: "mr-0 ml-auto",
         }}
       >
-        <p>demo</p>
+        <AddTaskForm />
       </Modal>
     </>
   )

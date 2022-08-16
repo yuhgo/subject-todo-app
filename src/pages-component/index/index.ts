@@ -1,1 +1,1 @@
-export { Index } from "@src/pages-component/index/page"
+export { Index } from "./page"
